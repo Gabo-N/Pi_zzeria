@@ -1,0 +1,277 @@
+:root {
+  --color-claro: #fafafa;
+  --color-paleta-oscuro: #f58410;
+  --color-paleta-medio: #ffa50f;
+  --color-paleta-claro: #ffc61a;
+  --color-oscuro: #282828;
+  --font-sans-serif: 'Roboto', sans-serif;  
+  --font-heading: 'Notable', sans-serif;  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+TIPOGRAFÍA & ESTILOS GENERALES
+--------------------------------------------------------------*/
+
+body {
+  font-family: var(--font-sans-serif);
+  font-weight: 400;
+  font-size: 1.1rem;
+  background-color: var(--color-claro);
+  color: var(--color-oscuro);
+  line-height: 1.2;
+  min-width: 200px;
+}
+
+header {
+  background-color: var(--color-oscuro);
+  border-bottom: solid 1.5px var(--color-claro);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-claro);
+}
+
+.pi {
+  font-family: var(--font-sans-serif);
+  font-size: 5rem;
+  font-weight: 700;
+  padding-right: 0.3rem;
+  background-color: var(--color-paleta-oscuro);
+}
+
+header nav a {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: var(--color-paleta-oscuro);
+  border-top: solid 1.5px var(--color-claro);
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: var(--color-oscuro);
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.redes img {
+  width: 54px;
+  opacity: 0.85;
+}
+
+h1:hover .pi {
+  background-color: var(--color-paleta-medio);
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--color-paleta-claro);
+  transition: color 0.3s ease-in-out;
+}
+
+.fondo-claro {
+  background-color: var(--color-claro);
+}
+
+.fondo-oscuro {
+  background-color: var(--color-oscuro);
+}
+
+.fondo-color {
+  background-color: var(--color-paleta-claro);
+  border-top: solid 2px var(--color-oscuro);
+  border-bottom: solid 2px var(--color-oscuro);
+}
+
+/*--------------------------------------------------------------
+LAYOUT
+--------------------------------------------------------------*/
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  height: 12vh;
+  padding: 4rem 6.25%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+}
+
+footer {
+  height: 12vh;
+  align-items: center;
+  padding: 0 6.25%;
+}
+
+nav ul, .redes {  
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.8rem;
+}
+
+.banda {
+  margin: 1rem 6.25%;
+}
+
+.banda-iconica {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.banda-iconica img {
+  padding-right: 0.8rem;
+}
+
+.slider img {
+  width: 100%;
+}
+
+
+/* TRIPTICO PARA TARJETAS Y LISTAS */
+
+.triptico {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+
+.contenedor {
+  width: 87.5%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* FIJACION DEL HEADER Y EL FOOTER */
+
+header {    
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+footer {  
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+}
+
+/*--------------------------------------------------------------
+COMPONENTES
+--------------------------------------------------------------*/
+
+/* TARJETAS Y LISTAS */
+
+.card {
+  width: 25%;
+  margin: 3rem 0;
+}
+
+.card img {
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  padding: 1.2rem;
+}
+
+.card h4 {
+  font-size: 2rem;
+  padding: 2rem 1.2rem 0;
+  font-style: italic;  
+}
+
+.card p {
+  font-size: 1.8rem;
+  padding: 1.2rem;
+}
+
+.card li {
+  font-size: 1.8rem;
+  padding-left: 1.2rem;
+  font-style: italic;
+}
+
+.fondo-color .card {
+  box-shadow: 3px 3px 12px #3f3f3f;
+}
+
+
+/* IFRAME */
+
+.contenedor-iframe {
+  overflow: hidden;
+  padding-top: 56.25%;  /* 16:9 aspect ratio */
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-top: solid 2px var(--color-oscuro);
+}
+
+.contenedor-iframe iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+/* FORMULARIO */
+
+form {  
+  padding: 2.5rem;
+  line-height: 1.4;
+}
+
+form button, select, label, input {
+  width: 200px;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+label:after {
+  content: ": "
+}
