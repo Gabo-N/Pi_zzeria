@@ -61,6 +61,10 @@ a{
   background-color: var(--color-paleta-oscuro);
 }
 
+.icono_pizza {
+  width: 54px;
+}
+
 header nav a {
   font-size: 1.6rem;
 }
@@ -84,16 +88,11 @@ footer p {
 
 .redes img {
   width: 54px;
-  opacity: 0.85;
+  opacity: 0.85;  
 }
 
 h1:hover .pi {
   background-color: var(--color-paleta-medio);
-  transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: var(--color-paleta-claro);
   transition: color 0.3s ease-in-out;
 }
 
@@ -109,6 +108,16 @@ nav a:hover {
   background-color: var(--color-paleta-claro);
   border-top: solid 2px var(--color-oscuro);
   border-bottom: solid 2px var(--color-oscuro);
+}
+
+nav a:hover {
+  color: var(--color-paleta-claro);
+  transition: color 0.3s ease-in-out;
+}
+
+.redes img:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;  
 }
 
 /*--------------------------------------------------------------
@@ -128,6 +137,29 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  gap: 1em;
+}
+
+.logo img{
+  width: 4em;
+  height: 4em;
+  animation: animate1 10s forwards ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate1 {
+  25%{
+      transform: rotate(90deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  75%{
+      transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 nav {
