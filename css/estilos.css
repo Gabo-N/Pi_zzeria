@@ -180,13 +180,15 @@ nav ul, .redes {
 }
 
 .banda {
-  margin: 1rem 6.25%;
+  padding: 1rem 6.25%;
 }
 
 .banda-iconica {
   display: flex;
   align-items: center;
   justify-content: end;
+  padding: 1rem 6.25%;
+  background-color: var(--color-paleta-medio);
 }
 
 .banda-iconica img {
