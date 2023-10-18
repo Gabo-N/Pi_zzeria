@@ -321,20 +321,20 @@ label:after {
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 720px) {
+@media (max-width: 992px) {
   body {
-    min-width: 521px;
+    min-width: 576px;
   }
 
   .triptico {
-    display: block;
+    flex-direction: column;
   }
 
 /* TARJETAS */
 
   .card {
-    width: 80%;
-    margin: 10% auto;
+    width: 87.5%;
+    margin: 3em auto;
   }
 
   .label-card-btn {
