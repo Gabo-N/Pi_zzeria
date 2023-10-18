@@ -124,7 +124,8 @@ nav a:hover {
 LAYOUT
 --------------------------------------------------------------*/
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: space-between;
 }
@@ -173,7 +174,8 @@ footer {
   padding: 0 6.25%;
 }
 
-nav ul, .redes {  
+nav ul,
+.redes {  
   display: flex;
   justify-content: space-evenly;
   gap: 1.8rem;
@@ -272,6 +274,14 @@ COMPONENTES
   box-shadow: 3px 3px 12px #3f3f3f;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.label-card-btn {
+  display: none;
+}
+
 
 /* IFRAME */
 
@@ -308,4 +318,47 @@ form button, select, label, input {
 
 label:after {
   content: ": "
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 720px) {
+  body {
+    min-width: 521px;
+  }
+
+  .triptico {
+    display: block;
+  }
+
+/* TARJETAS */
+
+  .card {
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  .label-card-btn {
+    display: block;
+  }
+
+  .label-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-info {
+    display: none;
+  }
+
+/* DESPLIEGA/CONTRAE TARJETA */
+
+  input[type="checkbox"]:checked+label .card-info {
+    display: block;
+  }
+  input[type="checkbox"]:checked+label .label-card-btn::before {
+    content: "\25BC"; /* ICONO FLECHA ABAJO */
+  }
+  input[type="checkbox"]+label .label-card-btn::before {
+    content: "\25C4"; /* ICONO FLECHA IZQUIERDA */
+  }
 }
