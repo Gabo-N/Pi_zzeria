@@ -316,7 +316,7 @@ form button, select, label, input {
   font-size: 1.2rem;
 }
 
-label:after {
+form label:after {
   content: ": "
 }
 
@@ -334,7 +334,7 @@ label:after {
 
   .card {
     width: 87.5%;
-    margin: 3em auto;
+    margin: 2em auto;
   }
 
   .label-card-btn {
