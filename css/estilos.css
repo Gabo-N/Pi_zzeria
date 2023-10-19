@@ -166,6 +166,7 @@ header {
 nav {
   display: flex;
   align-items: baseline;
+  justify-content: end;
 }
 
 footer {
@@ -378,8 +379,7 @@ RESPONSIVE
     flex-direction: column;
     height: 10em;
     padding: 1rem 6.25%;
-  }
-  
+  }  
 }
 
 /* FOOTER */
