@@ -366,9 +366,25 @@ RESPONSIVE
 }
 
 @media (max-width: 800px) {
+  
   header {
     flex-direction: column;
     height: 10em;
     padding: 1rem 6.25%;
+  }
+  
+}
+  
+  @media (max-width: 576px) {
+    
+  footer{
+    flex-direction: column;
+    height: 5em;
+    padding: 1rem 6.25%;
+  }
+    
+  footer p {
+    display: none;
+    /* font-size: 1.2rem; */
   }
 }
