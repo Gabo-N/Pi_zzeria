@@ -191,6 +191,7 @@ nav ul,
   justify-content: end;
   padding: 1rem 6.25%;
   background-color: var(--color-paleta-medio);
+  border-bottom: solid 2px var(--color-oscuro);
 }
 
 .banda-iconica img {
@@ -201,10 +202,10 @@ nav ul,
   width: 100%;
 }
 
-
 /* TRIPTICO PARA TARJETAS Y LISTAS */
 
-.triptico {
+.triptico,
+.seccion-unica {
   display: flex;
   justify-content: space-evenly;
 }
@@ -213,7 +214,7 @@ nav ul,
 
 .contenedor {
   width: 87.5%;
-  margin: 3rem 0;
+  margin: 3rem auto;
   display: flex;
   justify-content: center;
 }
@@ -286,20 +287,21 @@ input[type="checkbox"] {
 /* IFRAME */
 
 .contenedor-iframe {
-  overflow: hidden;
-  padding-top: 56.25%;  /* 16:9 aspect ratio */
   position: relative;
-  margin-bottom: 1.5rem;
-  border-top: solid 2px var(--color-oscuro);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 32%;
+  border: solid 1px var(--color-oscuro);
+  width: 87.5%;
+  margin: 3rem auto;
 }
 
 .contenedor-iframe iframe {
-  border: 0;
-  height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
 }
 
 
@@ -310,7 +312,10 @@ form {
   line-height: 1.4;
 }
 
-form button, select, label, input {
+form button,
+select,
+label,
+input {
   width: 200px;
   height: 25px;
   font-size: 1.2rem;
@@ -365,6 +370,8 @@ RESPONSIVE
   }
 }
 
+/* HEADER */
+
 @media (max-width: 800px) {
   
   header {
@@ -374,8 +381,10 @@ RESPONSIVE
   }
   
 }
+
+/* FOOTER */
   
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
     
   footer{
     flex-direction: column;
@@ -388,3 +397,33 @@ RESPONSIVE
     /* font-size: 1.2rem; */
   }
 }
+
+/* IFRAME */
+
+@media screen and (max-width: 1600px) {
+  .contenedor-iframe {
+    padding-bottom: 48%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contenedor-iframe {
+    padding-bottom: 64%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contenedor-iframe {
+    padding-bottom: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenedor-iframe {
+    padding-bottom: 96%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor-iframe {
+    padding-bottom: 112%;
+  }
+}
+
+
