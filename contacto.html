@@ -51,10 +51,59 @@
     <section class="seccion-unica fondo-oscuro">
       
       <!-- CONTENEDOR -->    
-      <div class="contenedor fondo-claro">
+      <div class="contenedor fondo-oscuro">
         
         <!-- FORMULARIO -->
-        <form>
+         <form name="fcontacto">
+          <fieldset>
+
+            <legend>Datos del usuario:</legend>
+
+            <label for="nombre">Nombre:</label> <br>
+            <input type="text" name="nombre" placeholder="Nombre..." id="nombre"> <br>
+
+            <label for="apellido"> Apellido:</label> <br>
+            <input type="text" name="apellido" placeholder="Apellido..." id="apellido"> <br>
+
+            <label for="edad">Edad:</label> <br>
+            <input type="text" name="edad " id="edad"> <br>
+
+            <label>Fecha de nacimiento:</label> <br>
+            <input type="date" name="fechanac"> <br>
+
+            <label for="genero">Género:</label> <br>
+            <select name="genero" id="genero">
+              <option value="Seleccionar">Seleccionar</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select><br>
+
+            <label>País:</label> <br>
+            <select name="pais" id="pais">
+              <option value="Seleccionar">Seleccionar</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Otro">Otro</option>
+            </select><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu Celular">
+            <br>
+
+            <label for="email">email:</label><br>
+            <input type="email" id="name" name="email" value="email" placeholder="tu-email@gmail.com... ">
+
+            <br>
+            <br>
+
+            <button type="button" id="enviar" class="boton" value="Enviar" onclick="envioFormulario()">Enviar</button>
+            <button type="reset" class="boton">Borrar</button>
+          </fieldset>
+        </form>
+        <!-- <form class="item2" name="fcontacto">
         
           <label for="nombre">Nombre y apellido del usuario</label> <br>
           <input type="text" name="nombre" placeholder="Nombre y apellido..."> <br>
@@ -85,7 +134,7 @@
         
           <button type="submit">Enviar</button>
           <button type="reset">Borrar</button>
-        </form>      
+        </form>  -->
       </div>      
       
     </section>
