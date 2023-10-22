@@ -33,19 +33,19 @@ function recomendarProductoAzar(){
   //Sortea un número entre 4 posibles
 
   const producto1 = {
-    texto: "recomienda nuestras pizzas",
+    texto: "nuestras pizzas",
     foto: "./imagenes/fotos/card_pizza_500x300_serjan-midili--9LB0GKPF0o-unsplash.jpg"
   }
   const producto2 = {
-    texto: "recomienda nuestras bebidas",
+    texto: "nuestras bebidas",
     foto: "./imagenes/fotos/card_bebida_500x300_bohdan-stocek-vt0O0Av96R4-unsplash.jpg"
   }
   const producto3 = {
-    texto: "recomienda nuestros postres",
+    texto: "nuestros postres",
     foto: "./imagenes/fotos/card_postre_500x300_max-nayman-5Qp5JaKHfUo-unsplash.jpg"
   }
   const producto4 = {
-    texto: "recomienda nuestras empanadas",
+    texto: "nuestras empanadas",
     foto: "./imagenes/fotos/card_empanadas_500x300_lucas-oriogun-3uNOYXf6-MI-unsplash.jpg"
   }
   //Define textos y fotos de las recomendaciones posibles
