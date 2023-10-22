@@ -2,10 +2,11 @@
   --color-claro: #fafafa;
   --color-paleta-oscuro: #f58410;
   --color-paleta-medio: #ffa50f;
-  --color-paleta-claro: #ffc61a;
+  --color-paleta-claro: #ffcc32;
   --color-oscuro: #282828;
   --font-sans-serif: 'Roboto', sans-serif;  
-  --font-heading: 'Notable', sans-serif;  
+  --font-heading: 'Notable', sans-serif;
+  --font-form:'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif; 
 }
 
 html {
@@ -32,6 +33,7 @@ body {
   color: var(--color-oscuro);
   line-height: 1.2;
   min-width: 200px;
+overflow-x: hidden;
 }
 
 header {
@@ -106,7 +108,6 @@ h1:hover .pi {
 
 .fondo-color {
   background-color: var(--color-paleta-claro);
-  border-top: solid 2px var(--color-oscuro);
   border-bottom: solid 2px var(--color-oscuro);
 }
 
@@ -120,17 +121,18 @@ nav a:hover {
   transition: opacity 0.3s ease-in-out;  
 }
 
+.actual {
+  font-weight: bold;
+  color: var(--color-paleta-medio);
+}
+
 /*--------------------------------------------------------------
 LAYOUT
 --------------------------------------------------------------*/
 
-header,
-footer {
+header {
   display: flex;
   justify-content: space-between;
-}
-
-header {
   height: 12vh;
   padding: 4rem 6.25%;
 }
@@ -170,6 +172,8 @@ nav {
 }
 
 footer {
+display: flex;
+  justify-content: center;
   height: 12vh;
   align-items: center;
   padding: 0 6.25%;
@@ -203,6 +207,30 @@ nav ul,
   width: 100%;
 }
 
+/* SLIDER */
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  width: 400%;
+  animation: carousel 16s infinite ease-in-out;
+}
+
+@keyframes carousel {
+  0%, 20% {
+      margin-left: 0%;
+  }
+  25%, 45% {
+    margin-left: -100%;
+  }
+  50%, 70% {
+    margin-left: -200%;
+  }
+  75%, 95% {
+    margin-left: -300%;
+  }
+}
+
 /* TRIPTICO PARA TARJETAS Y LISTAS */
 
 .triptico,
@@ -214,7 +242,7 @@ nav ul,
 /* CONTENEDOR DEL FORMULARIO */
 
 .contenedor {
-  width: 87.5%;
+  width: 25%;
   margin: 3rem 0;
   display: flex;
   justify-content: center;
@@ -309,10 +337,13 @@ input[type="checkbox"] {
 /* FORMULARIO */
 
 form {  
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--font-form);
   padding: 1rem;
   line-height: 1.8;
-  background-color: #ffc61a;
+  background-color: var(--color-paleta-claro);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 form button,
@@ -349,7 +380,24 @@ button{
 
 /* form label:after {
   content: ": "
-}*/
+}
+
+/* APP */
+
+.clienteFeliz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fotoCliente {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+
+
 
 /*--------------------------------------------------------------
 RESPONSIVE

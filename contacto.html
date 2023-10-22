@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Notable&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Notable&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon/favicon-16x16.png">
   <link rel="manifest" href="./imagenes/favicon/site.webmanifest">
-  
+
   <link rel="stylesheet" href="./css/estilos.css">
   <title>πzzeria</title>
 </head>
@@ -21,40 +22,52 @@
 <body>
   <header>
     <!-- TITULO PRINCIPAL DE LA PÁGINA -->
-    <div  class="logo">
+    <div class="logo">
       <h1><a href="./index.html"><span class="pi">π</span>zzería</a></h1>
       <figure>
-        <img class="icono_pizza" src="./imagenes/iconos/iconPizza-sin_fondo.png" alt="Ícono de pizza con animación"></img>
+        <img class="icono_pizza" src="./imagenes/iconos/iconPizza-sin_fondo.png"
+          alt="Ícono de pizza con animación"></img>
       </figure>
     </div>
-    
+
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav>      
-      
+    <nav>
+
       <!-- LISTA DE ENLACES A LAS OTRAS PÁGINAS -->
       <ul>
         <li><a href="./menu.html">Menú</a></li>
         <li><a href="./ubicacion.html">Ubicación</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./contacto.html" class="actual">Contacto</a></li>
       </ul>
-      
+
     </nav>
   </header>
-  
+
   <main>
     <!-- SECCIÓN INTERMEDIA -->
     <section class="banda-iconica">
       <img src="./imagenes/iconos/comment_FILL0_wght700_GRAD200_opsz40.svg" alt="Ícono de comentario">
-      <h2>Contacto</h2>
+      <!-- <h2>Contacto</h2> -->
     </section>
     <!-- SECCION UNICA  -->
-    <section class="seccion-unica fondo-oscuro">
-      
-      <!-- CONTENEDOR -->    
-      <div class="contenedor fondo-oscuro">
-        
+    <section class="triptico fondo-oscuro">
+
+      <div class="card fondo-claro">
+        <figure>
+          <img src="./imagenes/fotos/contacto_500x300_meg-boulden-yiob91CAqN8-unsplash.jpg"
+            alt="Pizzas sobre mesada"></img>
+        </figure>
+        <h3>Nosotros</h3>
+        <p>Somos una empresa con gran experiencia. Nuestros productos son elaborados con suma dedicación y utilizando
+          ingredientes de máxima calidad. <span>Rapidez en la atención. Todos los medios de pago.</span></p>
+      </div>
+
+      <!-- CONTENEDOR -->
+      <!-- <div class="contenedor fondo-oscuro"> -->
+      <div class="contenedor">
+
         <!-- FORMULARIO -->
-         <form name="fcontacto">
+        <form name="fcontacto">
           <fieldset>
 
             <legend>Datos del usuario:</legend>
@@ -103,52 +116,36 @@
             <button type="reset" class="boton">Borrar</button>
           </fieldset>
         </form>
-        <!-- <form class="item2" name="fcontacto">
-        
-          <label for="nombre">Nombre y apellido del usuario</label> <br>
-          <input type="text" name="nombre" placeholder="Nombre y apellido..."> <br>
-        
-          <label for="edad">Edad</label> <br>
-          <input type="number" name="edad "> <br>
-        
-          <label>Fecha de nacimiento del usuario</label> <br>
-          <input type="date" name ="fechanac"> <br>
-        
-          <label>Sexo del usuario<br>(elija una opción)</label> <br>
-          <input type="checkbox" name="sexo" value="Hombre"> Hombre <br>
-          <input type="checkbox" name="sexo" value="Mujer"> Mujer <br>
-          <input type="checkbox" name="sexo" value="Prefiero no decir"> No decir <br>
-        
-          <label>País de nacimiento del usuario</label> <br>
-          <select name="pais">
-          <option>Argentina</option>
-          <option>Brasil</option>
-          <option>Chile</option>
-          <option>Uruguay</option>
-          <option>Otro</option>
-          </select><br>
-        
-          <label>Ingrese su e-mail</label><br>
-          <input type="email" name="email" placeholder="tu-email@gmail.com... ">
-          <br>
-        
-          <button type="submit">Enviar</button>
-          <button type="reset">Borrar</button>
-        </form>  -->
-      </div>      
-      
+      </div>
+      <div class="card fondo-claro">
+
+        <figure>
+          <img src="./imagenes/fotos/card_pizza_500x300_serjan-midili--9LB0GKPF0o-unsplash.jpg"
+            alt="Una pizza y un horno con fuego"></img>
+        </figure>
+        <h3>Nuestros clientes</h3>
+        <div class="clienteFeliz">
+          <p><span id="nombreCliente">Ariel Palazzesi</span> <br> recomienda <br> <span id="textoRecomendacion">
+              nuestras pizzas.</span></p>
+          <img id="fotoCliente" src="./imagenes/fotos/cliente_feliz_180x180.jpg" alt="Cliente feliz"></img>
+        </div>
+        <p id="verMas" onclick="verClientesProductos()">Más gente que tiene buen gusto...</p>
+      </div>
     </section>
-        
+
   </main>
-  
+
   <footer>
     <div class="redes">
-      <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/iconos/facebook-circular-logo-64-freepik-flaticon.png" alt="Ícono de Facebook">
+      <a href="https://www.facebook.com/" target="_blank"><img
+          src="./imagenes/iconos/facebook-circular-logo-64-freepik-flaticon.png" alt="Ícono de Facebook">
       </a>
-      <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/iconos/instagram-64-freepik-flaticon.png" alt="Ícono de Instagram"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img
+          src="./imagenes/iconos/instagram-64-freepik-flaticon.png" alt="Ícono de Instagram"></a>
     </div>
-    <p>&copy; 2023 Proyecto 17</p> <!-- COPYRIGHT -->
   </footer>
+  <script src="js/formulario.js"></script>
+  <script src="js/api.js"></script>
 </body>
 
 </html>
