@@ -33,7 +33,7 @@ body {
   color: var(--color-oscuro);
   line-height: 1.2;
   min-width: 200px;
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -78,14 +78,6 @@ ul {
 footer {
   background-color: var(--color-paleta-oscuro);
   border-top: solid 1.5px var(--color-claro);
-}
-
-footer p {
-  font-size: 1.5rem;
-  color: var(--color-oscuro);
-  font-weight: 600;
-  font-style: italic;
-  text-transform: uppercase;
 }
 
 .redes img {
@@ -286,7 +278,7 @@ COMPONENTES
 .card h4 {
   font-size: 2rem;
   padding: 2rem 1.2rem 0;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .card p {
@@ -297,6 +289,10 @@ COMPONENTES
 .card li {
   font-size: 1.8rem;
   padding-left: 1.2rem;
+  font-style: italic;
+}
+
+.italic {
   font-style: italic;
 }
 
@@ -369,8 +365,7 @@ legend{
 }
 button{
   color: #fdfafa;
-  background-color: #545353;
- 
+  background-color: #545353; 
 }
 
 
@@ -388,15 +383,41 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 12rem;
+  margin-top: -1.2rem;
+  font-style: italic;
 }
 
 #fotoCliente {
-  width: 35%;
-  height: 35%;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
 }
 
+.verMas {
+  box-shadow: 3px 3px 9px #3f3f3f;
+  margin: 1.2rem;
+}
 
+.verMas p {
+
+  text-align: center;
+}
+
+.verMas:hover {
+  cursor: pointer;
+  font-weight: 500;
+  transition: font-weight 0.4s ease-in-out;
+}
+
+.verMas:active {
+  box-shadow: 2px 2px 9px #c5c5c5;
+  color: var(--color-oscuro);
+}
+
+.verMas:active p {
+  font-weight: 400;
+}
 
 
 /*--------------------------------------------------------------
