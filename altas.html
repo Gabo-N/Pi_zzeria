@@ -48,13 +48,14 @@
 
     <div class="container">
     <!--enctype="multipart/form-data es necesario para enviar archivos al back.-->
-    
+    <table>
     <form id="formulario" enctype="multipart/form-data">
-        <div  class="form-group row">
+        <tr><div  class="form-group row">
             <div class="col-sm-10">
-        <label for="codigo" class="form-label">Código:</label>
-        <input type="text" id="codigo" name="codigo" required class="form-control">
-    </div></div>
+        <td><label for="codigo" class="form-label">Código:</label></td>
+        <td><input type="text" id="codigo" name="codigo" required class="form-control"></td>
+        
+    </div></div></tr>
         <div  class="form-row">
             <div class="col-sm-10">
         <label for="descripcion" class="form-label">Descripción:</label>
@@ -80,7 +81,7 @@
         <button type="submit" class="btn btn-dark" type="button">Agregar Producto</button>
         <a href="inicio.html"><button type="button" class="btn btn-dark">Menú Administrador</button></a>
             </div></div>
-    </form>
+    </form></table>
     </div> 
     <script src="./altas.js"></script>
 </body>
