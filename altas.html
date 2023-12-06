@@ -45,8 +45,6 @@
 
     <h1 class="h2">Agregar Productos</h1>
     <h3 class="h3">La πzzería</h3>
-
-    <div class="container">
     <!--enctype="multipart/form-data es necesario para enviar archivos al back.-->
     <table>
     <form id="formulario" enctype="multipart/form-data">
@@ -56,11 +54,11 @@
         <td><input type="text" id="codigo" name="codigo" required class="form-control"></td>
         
     </div></div></tr>
-        <div  class="form-row">
-            <div class="col-sm-10">
+        <tr><div  class="form-row">
+            <td><div class="col-sm-10">
         <label for="descripcion" class="form-label">Descripción:</label>
         <input type="text" id="descripcion" name="descripcion" required class="form-control">
-    </div></div>
+    </div></td></div></tr>
         <div  class="form-group row">
             <div class="col-sm-10">
         <label for="cantidad" class="form-label">Cantidad:</label>
@@ -82,7 +80,7 @@
         <a href="inicio.html"><button type="button" class="btn btn-dark">Menú Administrador</button></a>
             </div></div>
     </form></table>
-    </div> 
+
     <script src="./altas.js"></script>
 </body>
 </html>
