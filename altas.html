@@ -13,16 +13,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon/favicon-16x16.png">
   <link rel="manifest" href="./imagenes/favicon/site.webmanifest">
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  
   <link rel="stylesheet" href="./css/estilos.css">
-  <title>La πzzería</title>
+  <title>La πzzeria</title>
 </head>
 
 <body>
   <header>
     <!-- TITULO PRINCIPAL DE LA PÁGINA -->
-    <div class="logo">
+    <div  class="logo">
       <h1><a href="./index.html"><span class="pi">π</span>zzería</a></h1>
       <figure>
         <img class="icono_pizza" src="./imagenes/iconos/iconPizza-sin_fondo.png" alt="Ícono de pizza con animación"></img>
@@ -41,7 +42,7 @@
 
     </nav>
   </header>
-<body>
+
     <h1 class="h2">Agregar Productos</h1>
     <h3 class="h3">La πzzería</h3>
 
@@ -62,12 +63,13 @@
 
         <label for="categoria" class="form-label">Categoría:</label>
         <input type="number" id="categoria" name="categoria" class="form-control">
-        <p>
+        <div>
         <button type="submit" class="btn btn-dark" type="button">Agregar Producto</button>
-        <a href="inicio.html">Menú principal</a></p>
+        <a href="inicio.html">Menú principal</a>
+        <a href="inicio.html"><button type="button" class="btn btn-dark">Menú Administrador</button></a>
+        </div>
     </form>
     </div> 
     <script src="./altas.js"></script>
 </body>
-
 </html>
