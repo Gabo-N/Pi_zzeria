@@ -199,6 +199,23 @@ nav ul,
   width: 100%;
 }
 
+.contenedor-centrado {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.altas {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 /* SLIDER */
 
 .slider {
@@ -385,7 +402,7 @@ button{
   align-items: center;
   height: 12rem;
   margin-top: -1.2rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 #fotoCliente {
@@ -400,7 +417,7 @@ button{
 }
 
 .verMas p {
-
+  font-style: italic;
   text-align: center;
 }
 

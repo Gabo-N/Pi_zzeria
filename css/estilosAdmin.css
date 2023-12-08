@@ -1,0 +1,112 @@
+/* Estilos para todo el proyecto */
+/* body {
+    background-color: #f9f9f9;
+} */
+
+.admin-form {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 20px; */
+    /* padding: 10px; */
+}
+
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.admin-form p {
+    /* background-color: #f9f9f9; */
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #007bff;
+} */
+
+.admin-form {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    /* border: 1px solid lightslategray;
+    border-radius: 5px; */
+}
+
+.admin-form table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.admin-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="number"],
+.admin-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.admin-form input[type="submit"] {
+    padding: 10px;
+    background-color: #282828;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.admin-form input[type="submit"]:hover {
+    background-color: #424242;
+}
+
+.admin-form button {
+    padding: 6px 12px;
+    margin:4px;
+    background-color: #282828;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+}
+
+.admin-form button:hover {
+    background-color: #424242;
+}
+
+.admin-form a {
+    padding: 6px 12px;
+    margin:4px;
+    background-color: #282828;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.admin-form a:hover {
+    background-color: #424242;
+}
